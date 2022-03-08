@@ -1,0 +1,14 @@
+<%= form_for @empresa, :html => { :multipart => true } do |f| %>
+
+    <p><%= f.label :razao social %><br />
+    <%= f.text_field :razaosocial %></p>
+
+    <p><%= f.label :nome %><br />
+    <%= f.text_field :nome %></p>
+
+    <p><%= f.label :localidade %><br />
+    <%= f.text_field :localidade %></p>
+    
+    <%= f.submit %>
+
+<% end %>

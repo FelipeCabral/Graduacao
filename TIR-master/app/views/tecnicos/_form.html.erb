@@ -1,0 +1,20 @@
+<%= form_for @tecnico, :html => { :multipart => true } do |f| %>
+
+    <p><%= f.label :matricula %><br />
+    <%= f.text_field :matricula %></p>
+
+    <p><%= f.label :nome %><br />
+    <%= f.text_field :nome %></p>
+
+    <p><%= f.label :ocupacao %><br />
+    <%= f.text_field :ocupacao %></p>
+    
+    <p><%= f.label :especializacao %><br />
+    <%= f.text_field :especializacao %></p>
+
+    <p><%= f.label :titulo %><br />
+    <%= f.collection_select :tiposervico_id, Tiposervico.all, :id, :titulo %></br>
+    
+    <%= f.submit %>
+
+<% end %>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Homepage</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<html lang="pt-BR">
+
+<body>
+
+<form>
+
+  <h1><%=t :title %></h1>
+  <p><%= flash[:notice] %></p>
+  
+  <br><br>
+  
+  <a href="./en">English</a><br>
+  <a href="./pt">Portuguese version </a>
+
+</form>
+
+</body>
